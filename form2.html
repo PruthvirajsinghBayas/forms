@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form 2</title>
+</head>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(69, 118, 247);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.container {
+    min-height: 100px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registration-form {
+    background: white;
+    border-radius: 12px;
+    padding: 32px 32px 24px 32px;
+    width: 750px;
+    max-width: 950px;
+}
+
+h2 {
+    margin: 0 0 8px 0;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: rgb(34, 34, 34);
+}
+
+.section-title {
+    color: rgb(153, 153, 153);
+    font-size: 1.1rem;
+    margin: 24px 0 10px 0;
+    font-weight: 600;
+}
+
+.form-row {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 14px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.98rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+    padding: 8px 12px;
+    border: 1.5px solid rgb(226, 227, 233);
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    background: rgb(250, 251, 252);
+    margin-bottom: 0;
+}
+
+input::placeholder {
+    color: rgb(187, 187, 187);
+}
+
+input:focus {
+    border-color: rgb(69, 118, 247);
+}
+
+.next-btn {
+    width: 230px;
+    background: rgb(69, 118, 247);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.05rem;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 0;
+    margin-top: 20px;
+    cursor: pointer;
+    display: block;
+
+}
+
+.next-btn:hover {
+    background: rgb(41, 84, 186);
+}
+
+
+
+</style>
+<body>
+    <div class="container">
+        <form class="registration-form">
+            <h2>Registration</h2>
+            <div class="section-title">Personal Details</div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" placeholder="Enter birth date">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="mobile">Mobile number</label>
+                    <input type="tel" id="mobile" placeholder="Enter mobile number">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <input type="text" id="gender" placeholder="Enter your gender">
+                </div>
+                <div class="form-group">
+                    <label for="occupation">Occupation</label>
+                    <input type="text" id="occupation" placeholder="Enter occupation">
+                </div>
+            </div>
+            <div class="section-title">Identity Details</div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="idType">ID Type</label>
+                    <input type="text" id="idType" placeholder="Enter ID type">
+                </div>
+                <div class="form-group">
+                    <label for="idNumber">ID Number</label>
+                    <input type="text" id="idNumber" placeholder="Enter ID number">
+                </div>
+                <div class="form-group">
+                    <label for="issueAuthority">Issue Authority</label>
+                    <input type="text" id="issueAuthority" placeholder="Enter issue department">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="issueDate">Issue Date</label>
+                    <input type="date" id="issueDate" placeholder="Enter ID issue date">
+                </div>
+                <div class="form-group">
+                    <label for="issueState">Issue State</label>
+                    <input type="text" id="issueState" placeholder="Enter ID issue state">
+                </div>
+                <div class="form-group">
+                    <label for="expiryDate">Expiry Date</label>
+                    <input type="date" id="expiryDate" placeholder="Enter ID expiry date">
+                </div>
+            </div>
+            <button type="submit" class="next-btn">Next ➞</button>
+        </form>
+    </div>
+</body>
+</html>
